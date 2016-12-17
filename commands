@@ -1,0 +1,11 @@
+use db1
+db.createTable(tb,{k1:integer,k2:integer})
+db.tb.insert({k1:1,k2:2})
+db.tb.insert({k1:1,k2:1})
+db.tb.insert({k1:2,k2:3})
+db.tb.insert({k1:1,k2:1})
+db.tb.insert({k1:1,k2:1})
+db.tb.insert({k1:0,k2:9})
+db.tb.insert({k1:1,k2:1})
+db.tb.find()
+db.tb.find().sort({k1:1})
